@@ -1,0 +1,15 @@
+.Header{text-align:center;margin:auto;width:75%;background-color:lightgray;}
+.Main_Body{text-align:center;margin:auto;height:100%;width:75%;background-color:gray;border:1px;border-style:ridge;}
+.Story_Body{text-align:left;margin:auto;height:100%;width:98%;background-color:gray;border:0px;border-style:ridge;line-height:1.2;text-indent: 20px;}
+.Poems_Body1{text-align:center;margin:auto;height:100%;width:50%;background-color:gray;border:0px;border-style:ridge;left:0;float: left;}
+.Poems_Body2{text-align:center;margin:auto;height:100%;width:50%;background-color:gray;border:0px;border-style:ridge;right:0;float: right;}
+body{background-color:#996666;color: black;font-family: Verdana;}
+.copyright{position:fixed;bottom: 0;background-color: white;border: 2px solid #4CAF50;text-align:center;width:50%;left:25%;}
+.Lost{color:tomato;}
+nav{position:sticky;top:0;background-color:white;border:2px;text-align:center;display:flex;justify-content:center;border-color:black;border-style:ridge;}
+p{width:50%;margin:auto;}
+.main-list {list-style-type: none;display: inline-block;text-align: left;}
+ol {list-style-type: upper-roman;list-style-position: inside;display: inline-block;text-align: left;}
+.sub-list{list-style-type: none;}
+p {line-height: 100%; margin-bottom: 0in;font-size: 14pt;text-indent: 0.5in;}
+h1 {box-align:center; line-height: 100%; margin-bottom: 0in; size: 7; font-size: 48pt; color:#00008b;}
