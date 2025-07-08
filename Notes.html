@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The web site of omniamors</title>
+    <link href="/Design/style.css" rel="stylesheet" type="text/css" media="all"><script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }      
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      return;
+    }
+  }
+};
+</script>
+    </head>
+  <body>
+  <div w3-include-html="Design/nav.html"></div><script>includeHTML();</script>
+    <div class="Header"><h1>Here be rambling, thoughts, notes, ideas.</h1></div>
+    <div class="Main_Body"><h2>The Conscious Stream</h2>
+    <p>More and more, I step away from social media. More and more often. I find little to no benefit in it. The issue that brings me back to it is simple: I am very alone. I have my co-workers, my father, my mother, brother and my son. Those are the only people who seem to be consistently there. Sometimes I think that living in the city would simplify the issue but... that would be difficult to manage making happen.</p><br><p>I disappeared and no one noticed.</p><br><p>It seems sanity is slowly slipping away in regards to the general populace and as it does, I retract more and more.</p><br><p>(5/12/2025)I went back, to some small degree, to social media. I fell back into the same trappings, the same routines and had to run away, yet again. the problem is so, so easy for myself to get away from but... if I want other people to actually try to be active in my life. It's almost as though they forget you exist once you go online. We're destroying ourselves on a social-structure level through our ever-increasing reliance on technology to replace various aspects in our lives. How much longer until AI-driven classrooms via VR begin to pop-up and replace in-person classrooms? The damage such a thing could cause... and I don't doubt we'd go for it, push for it...</p>
+    <br></div>
+    <div class="copyright"> Copyright: Christopher Wood, 2024-2025 | <a href="/contact.html">contact</a></div>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The web site of omniamors</title>
+    <link href="/Design/style.css" rel="stylesheet" type="text/css" media="all"><script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }      
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      return;
+    }
+  }
+};
+</script>
+    </head>
+  <body>
+  <div w3-include-html="Design/nav.html"></div><script>includeHTML();</script>
+    <div class="Header"><h1>Here Be Dragons</h1></div>
+    <div class="Main_Body"><h2>As I add new pages for this, I'll update the list.</h2>
+
+<p>
+    <ul class="main-list">
+     <li><b>Cryptography:</b>
+        <ul class="sub-list">
+         <li>AAC: Alpha-Alpha Ciphers(Substitution)</li>
+         <li>ANC: Alpha-Numeric Ciphers(Substitution)</li>
+         <li>NAC: Numeric-Alphabetic Ciphers(Substitution)</li>
+         <li>NSC: Numeric-Symbolic Ciphers(Substitution)</li>
+         <li>ASC: Alphabetic-Symbolic Ciphers(Substitution)</li>
+         <li>CES: Computer Encryption Systems</li>
+         <li>LWS: (Pseudo)Language and Writing Systems</li>
+         <li>STC: Simple Transposition Ciphers</li>
+         <li>AES: Advanced Encryption Systems</li>
+         <li>CCS: Coded Communications Systems</li>
+        </ul>
+      </li>
+      <br>
+     <li><b>Steganography:</b>
+      <ul class="sub-list">
+        <li>STG-1: Simple Common Methods</li>
+        <li>STG-2: Inks & Their Solutions</li>
+        <li>STG-3: The Green Cipher</li>
+        <li>STG-4: Progressive Steganography</li>
+        <li>STG-5: Null Steganography</li>
+      </ul>
+     </li>
+     <br>
+     <li><b>Cryptography Related Decryption Methods:</b>
+     <br><br>
+        <ol>
+          <li><b>Frequency Methodology Resources(American English):</b>
+            <ul class="sub-list">
+              <li>DM-1: Letter Frequency</li>
+              <li>DM-2: Common Digrams</li>
+              <li>DM-3: Common Trigrams</li>
+              <li>DM-4: Common Words</li>
+              <li>DM-5: Common Double Letters</li>
+            </ul>
+          </li>
+          <br>
+          <li><b>Applicable Mathematics:</b>
+            <ul class="sub-list">
+            <li>AM-1: Chain Addition/Subtraction</li>
+            <li>AM-2: Fibonnaci Mathematics</li>
+            <li>AM-3: Chinese Remainder Theorum</li>
+            <li>AM-4: Modular Arithmetic</li>
+            <li>AM-5: Dexdecimal Decryption</li>
+            <li>AM-6: Binary Decryption</li>
+            </ul>
+          </li>
+       </ol>
+     </li>
+     <br>
+      <li><b>Religious/Philosophical/Spiritual Beliefs, Lists & Claims</b></li>
+      <ul class="sub-list">
+        <li><b>Commandments, Tenents, Rules:</b></li>
+          <ul class="sub-list">
+            <li>Christianity</li>
+            <li>LaVeyan Satanism</li>
+            <li>Buddhism</li>
+            <li>Hare Krishna</li>
+          </ul>
+          <li><b>Witchcraft</b></li>
+            <ul>
+              <li>Herbalism</li>
+              <li>Divination:</li>
+              <ul>
+                <li>Tarot</li>
+              </ul>
+            </ul>
+          <li><b>Folklore</b></li>
+          <ul>
+          <li>Appalachian</li>
+          <li>Scottish</li>
+          <li>Irish</li>
+          </ul>
+      </ul>
+    </ul>
+    
+    </p>
+    </div>
+    
+    <div class="copyright"> Copyright: Christopher Wood, 2024-2025 | <a href="/contact.html">contact</a></div>
+  </body>
+</html>

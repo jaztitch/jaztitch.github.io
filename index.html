@@ -32,9 +32,9 @@ function includeHTML() {
     </head>
   <body onload="randomLoad()">
   <div w3-include-html="Design/nav.html"></div><script>includeHTML();</script>
-    <div class="Header"><h1>In a hole, in the ground...</h1><input type="text" size:"50" id="random-phrase" placeholder="A random phrase..."><br></div> 
+    <div class="Header"><h1>In a hole, in the ground...<input type="text" id="random-phrase" placeholder="A random phrase..."></h1></div> 
     
-    <script>const phrases = ["there lived a Hobbit.","one might find many a treasure.","one may find many a terror","can easily be found another world.","I rested before arising to scale mountains tall","the worms consume, given time","resides buried gold.","it resonates.","The curtain of night blankets","I sleep."];const randomItem = (arr) => arr[Math.floor(Math.random() * arr.length)];
+    <script>const phrases = ["there lived a Hobbit.","one might find many a treasure.","one may find many a terror","can easily be found another world.","I rested before arising to scale mountains tall","the worms consume, given time","resides buried gold.","it resonates.","The curtain of night blankers","I sleep."];const randomItem = (arr) => arr[Math.floor(Math.random() * arr.length)];
 document.querySelector('#random-phrase').value = randomItem(phrases);
 </script>
 
