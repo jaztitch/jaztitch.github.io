@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The web site of omniamors</title>
+    <link href="/../Design/style.css" rel="stylesheet" type="text/css" media="all">
+<script>function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }      
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      return;
+    }
+  }
+};
+</script>
+    </head>
+  <body>
+  <div w3-include-html="/../Design/nav.html"></div><script>includeHTML();</script>
+    <div class="Header"><h1>Clarence & the Mice</h1><br><h2>A very short, quite sad story about a dog</h2></div>
+    <div class="Main_Body"><div class="Story_Body">Clarence was a small, ugly dog. He was so small and ugly, in fact, that most people might mistake him for a rat! Clarence, you see, was no bigger than a boot and he had no fur, save for that on his face.<br />Still, despite these things, Clarence had a loving family. There was Mr and Missus, Jane and Jack. Clarence had not a worry in his happy life, all his days were bright, followed by many a peaceful night.<br />This was all true until came the day when Clarence met the mice who'd decided to invade. First there was one, then two, then three! They'd see Clarence and they'd squeakily say "What a funny looking rat!". Then they'd laugh and laugh, shaking with glee.<br />"If the missus might see these mice three, why she'd jump in a fright, scream and flee." Clarence growled quietly. "I cannot let that happen, not while I'm around. I'll scared these mice three, scare them and drive them out! I cannot be frightened, no not by one mouse!"<br />So, Clarence barked and growled, scratched and howled, determined to drive the mice out. The Smiths, however, they couldn't stand it one bit, they didn't like all the noise. They built him a house where there wasn't a mouse and into the yard, they put Clarence out.<br />With great despair, Clarence cried, he whined and howled from loneliness. In the window, the mice sat. They watch Clarence and called him a rat, not caring that he was sad.<br />Then one day, Clarence sat in front of his house of slats, what did he see but one of the mice three. He sat and watched, waiting in silence until eventually the mouse made its way just in his reach. Growling, Clarence stood, ready to pounce.<br />"Please, dog, please, I mean you no harm. My family, we've moved out into the barn. Those people, you see, they got something much worse than me. They brought back a cat and it's worse than you. It's big and mean with sharp claws a plenty and now my family and I, we see your pain. Now I'm here to offer peace though it might be in vain."<br />Clarence calms reluctantly, watching the mouse shivering. "A cat, you say? Am I still but a rat to you? Perhaps, I hope, this means I might come back and sleep by the bed."<br />"Have you bumped your head? They've replaced you, see. That cat is big, it's mean and it'll likely get you put back out here again."<br />"No, no, that cat's a friend, you'll see."<br />So Clarence waited for a few days more. Quiet and patient, he sat and waited for the family to bring him in again to safety. Clarence sat and waited, getting older and older until one day, he laid down, too old to keep sitting. Clarence fell asleep waiting.<br/></div></div><br><br><br><br>
+    <div class="copyright"> Copyright: Christopher Wood, 2024-2025 | <a href="/contact.html">contact</a></div>
+  </body>
+</html>
