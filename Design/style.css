@@ -12,4 +12,4 @@ p{width:50%;margin:auto;}
 ol {list-style-type: upper-roman;list-style-position: inside;display: inline-block;text-align: left;}
 .sub-list{list-style-type: none;}
 p {line-height: 100%; margin-bottom: 0in;font-size: 14pt;text-indent: 0.5in;}
-h1 {box-align:center; line-height: 100%; margin-bottom: 0in; size: 7; font-size: 48pt; color:#00008b;}
+h1 {align:center; line-height: 100%; margin-bottom: 0in; size: 7; font-size: 48pt; color:#00008b;}

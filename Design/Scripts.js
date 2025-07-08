@@ -7,5 +7,5 @@ var texts = [
 
 document.getElementById('randomText').value = texts[Math.floor(Math.random()*texts.length)];
 
-<input type="text" id="randomText"></input>
+<input type="text" id="randomText">
 </script>
